@@ -1,3 +1,162 @@
-p   {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+:root {
+    /* Colores Primarios */
+    --primario-1: #8B48BF;
+    --primario-2: #3CDDF3;
+    --segundario-1: #422458;
+
+    /* Color Neutro */
+    --neutro-1: #1E1E26;
+    --nuetro-2: #232851;
+    --gris: rgb(249, 249, 249);
+    --luz: #fff;
+    --oscuro: #000;
+
+    --tamano-fuente-base: 16px --color-hover-texto: rgba(36, 46, 82, 0.6);
+    /* Fuentes */
+    --font-principal: 'Be Vietnam Pro', sans-serif;
+}
+
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--tamano-fuente-base)
+}
+
+
+/* Header */
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px  0;
+}
+
+.logo img {
+    width: 6.73rem;
+    height: 1.563rem;
+    margin-right: 10px;
+}
+
+nav.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+nav.menu ul li a {
+    margin: 15px;
+    text-decoration: none;
+    color: var(--nuetro-2);
+}
+
+nav.menu ul li a {
+    margin: 15px;
+    text-decoration: none;
+    color: var(--nuetro-2);
+    font-size: 0.813rem;
+}
+
+nav.menu ul li a:hover {
+    color: var(--color-hover-texto);
+}
+
+.btn-primario {
+    background-color: var(--primario-1);
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 0.824rem;
+    text-align: center;
+    color: var(--luz);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 12.5px 41px;
+
+}
+
+.btn-primario:hover {
+    background-color: var(--segundario-1);
+}
+
+/* END Header */
+
+
+.slideshow .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.slideshow div img {
+    width: 540px;
+
+}
+
+.contenido-slideshow {
+    display: block;
+    text-align: end;
+}
+
+.contenido-slideshow div h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+}
+
+.contenido-slideshow p {
+    margin: 28px 0
+}
+
+h2 {
+    color: var(--nuetro-2);
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--oscuro);
+    text-align: right;
+}
+
+.banner {
+    background-color: var(--primario-1);
+    width: 100%;
+    display: flex;
+    color: var(--luz);
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-top: 95px;
+}
+
+.banner .contenido {
+    display: flex;
+    gap: 100px;
+    flex: 1 0 450px ;
+
+}
+
+.banner .contenido h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    width: 50%;
+}
+
+.banner .contenido span {
+    width: 50%;
+    font-size: 1rem;
+   
 }
