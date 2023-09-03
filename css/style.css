@@ -43,7 +43,7 @@ header div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 32px  0;
+    padding: 32px 0;
 }
 
 .logo img {
@@ -92,6 +92,10 @@ nav.menu ul li a:hover {
     background-color: var(--segundario-1);
 }
 
+.menu-mobile {
+    display: none;
+}
+
 /* END Header */
 
 
@@ -112,19 +116,17 @@ nav.menu ul li a:hover {
     text-align: end;
 }
 
-.contenido-slideshow div h2 {
+.contenido-slideshow  h2 {
+    font-size: 50px;
     font-weight: 700;
-    font-size: 3.125rem;
+    color: var(--nuetro-2);
+    text-align: right;
+    margin-bottom: 20px;
+
 }
 
 .contenido-slideshow p {
     margin: 28px 0
-}
-
-h2 {
-    color: var(--nuetro-2);
-    text-align: right;
-    margin-bottom: 20px;
 }
 
 p {
@@ -145,7 +147,7 @@ p {
 .banner .contenido {
     display: flex;
     gap: 100px;
-    flex: 1 0 450px ;
+    flex: 1 0 450px;
 
 }
 
@@ -158,5 +160,5 @@ p {
 .banner .contenido span {
     width: 50%;
     font-size: 1rem;
-   
+
 }
