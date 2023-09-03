@@ -14,11 +14,14 @@
     --gris: rgb(249, 249, 249);
     --luz: #fff;
     --oscuro: #000;
+    --text_alt: #B3B2B7;
 
-    --tamano-fuente-base: 16px --color-hover-texto: rgba(36, 46, 82, 0.6);
+    --tamano-fuente-base: 16px;
+    --color-hover-texto: rgba(36, 46, 82, 0.6);
     /* Fuentes */
     --font-principal: 'Be Vietnam Pro', sans-serif;
 }
+
 
 
 .contenedor {
@@ -99,7 +102,7 @@ nav.menu ul li a:hover {
 
 /* END Header */
 
-
+/* Slideshow */
 .slideshow .content {
     display: flex;
     justify-content: space-between;
@@ -117,7 +120,7 @@ nav.menu ul li a:hover {
     text-align: end;
 }
 
-.contenido-slideshow  h2 {
+.contenido-slideshow h2 {
     font-size: 50px;
     font-weight: 700;
     color: var(--nuetro-2);
@@ -134,6 +137,7 @@ p {
     color: var(--oscuro);
     text-align: right;
 }
+/* End Slideshow */
 
 .banner {
     background-color: var(--primario-1);
@@ -161,5 +165,55 @@ p {
 .banner .contenido span {
     width: 50%;
     font-size: 1rem;
+
+}
+
+/* Cards */
+
+.cards  {
+
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card {
+    display: flex;
+    align-items:baseline;
+    gap: 23px;
+    width: 500px
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--luz);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--primario-1);
+    height: 43px;
+    min-width: 69px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+
+}
+
+
+.contenido-card .titulo {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--nuetro-2);
+    padding-top: 12px;
+}
+
+.contenido-card legend {
+    color: var(--text_alt);
 
 }
