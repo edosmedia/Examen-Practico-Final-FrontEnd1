@@ -166,10 +166,12 @@ p {
 
 /* End Slideshow */
 
+
 .py64 {
     padding: 64px 0 !important;
 }
 
+/* Banner  */
 .banner {
     background-color: var(--primario-1);
     width: 100%;
@@ -197,7 +199,7 @@ p {
     font-size: 1rem;
 
 }
-
+/* END Banner  */
 
 .calltoaction>.banner .contenido {
     display: flex;
@@ -260,7 +262,7 @@ p {
     color: var(--text_alt);
 
 }
-
+/* END Cards */
 
 
 /* Footer */
@@ -363,3 +365,5 @@ footer .contenido-footer .btn-primario {
     -o-border-radius: 50px;
     text-transform: capitalize;
 }
+
+/* END Footer */
