@@ -22,23 +22,19 @@
     --font-principal: 'Be Vietnam Pro', sans-serif;
 }
 
-
-.contenedor {
-    max-width: 1320px;
-    margin: auto;
-}
-
 * {
+    font-family: var(--font-principal);
+    font-size: var(--tamano-fuente-base);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: var(--font-principal);
-    font-size: var(--tamano-fuente-base)
-}
 
+.contenedor {
+    max-width: 1320px;
+    margin: auto;
+}
 
 /* Header */
 
@@ -98,7 +94,7 @@ nav.menu ul li a:hover {
 
 .btn-segundario {
     background-color: var(--luz);
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 30px;
     font-size: 0.824rem;
     text-align: center;
@@ -113,10 +109,16 @@ nav.menu ul li a:hover {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .btn-segundario:hover {
-    background-color: var(--gris);
+    background-color: #c4c4c4;
+    font-weight: 600;
 }
 
 .menu-mobile {
@@ -212,7 +214,7 @@ p {
 
 .cards {
 
-    margin-top: 40px;
+    padding: 40px 0;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -276,6 +278,7 @@ footer {
 .contenido-footer .fila-1 {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .contenido-footer .fila-2 {
@@ -330,18 +333,33 @@ footer .contenido-footer input[type=email] {
     font-weight: 600;
 }
 
+footer .contenido-footer .box:first-child {
+    width: 20%;
+    justify-content: space-between;
+}
 
-footer .contenido-footer .box4{
+footer .contenido-footer .box {
+    width: 26.66%;
+    justify-content: space-between;
+}
+
+footer .contenido-footer .box a:hover {
+    text-decoration: underline;
+}
+
+footer .contenido-footer .box form {
     display: flex;
     gap: 10px;
+    justify-content: end;
 }
+
 footer .contenido-footer .btn-primario {
-  max-height: 44px;
-  padding: 10px 20px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  text-transform: capitalize;
+    max-height: 44px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-transform: capitalize;
 }
