@@ -67,10 +67,16 @@ nav.menu ul li a {
     text-decoration: none;
     color: var(--nuetro-2);
     font-size: 0.813rem;
+    transition:  all 200ms ease;
+    -webkit-transition:  all 200ms ease;
+    -moz-transition:  all 200ms ease;
+    -ms-transition:  all 200ms ease;
+    -o-transition:  all 200ms ease;
 }
 
 nav.menu ul li a:hover {
     color: var(--color-hover-texto);
+    border-bottom: 3px  solid var(--segundario-1);
 }
 
 .btn-primario {
