@@ -352,6 +352,7 @@ footer {
     display: flex;
     justify-content: space-between;
     gap: 10px;
+
 }
 
 .contenido-footer .fila-2 {
@@ -368,7 +369,7 @@ footer .contenido-footer {
 }
 
 footer .contenido-footer .logo {
-    margin-bottom: 78px;
+    margin-bottom: 70px;
 }
 
 footer .contenido-footer .sociales {
@@ -411,8 +412,12 @@ footer .contenido-footer .box:first-child {
     justify-content: space-between;
 }
 
+footer .contenido-footer .box:nth-child(2) {
+    display: flex;
+}
+
 footer .contenido-footer .box {
-    width: 26.66%;
+    width: 39.99%;
     justify-content: space-between;
 }
 
