@@ -1,5 +1,5 @@
-/* table */
-@media (min-width: 320px) and (max-width: 1024px) {
+/* Mobile y Tablet desde 380px a 1024px */
+@media (max-width: 1024px) {
   header .contenedor {
     padding: 0 3.5rem;
   }
@@ -10,7 +10,10 @@
 
   .menu-mobile {
     display: block !important;
+    animation: menu-atencion 3s ease-in infinite;
+    -webkit-animation: menu-atencion 3s ease-in infinite;
   }
+
 
   .slideshow .content {
     flex-direction: column;
@@ -48,13 +51,11 @@
     position: absolute;
   }
 
-  .cards .card .contenido-card .titulo {
-    margin-left: 50px;
-  }
 
   .cards .card .contenido-card .titulo {
     background-color: #8B48BF4D;
-    padding: 12px 12px 12px 32px;
+    padding: 12px 12px 12px 45px;
+    margin-left: 1.875rem;
   }
 
   .bestmonth {
@@ -84,4 +85,88 @@
     color: var(--luz);
   }
 
+  footer .contenido-footer {
+    padding: 40px 50px;
+  }
+
+  .contenido-footer .fila-1 {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  footer .contenido-footer .fila-1 .box {
+    width: 100%;
+  }
+
+  footer .contenido-footer .fila-1 .box:nth-child(2) {
+    margin: 25px 0;
+  }
+
+  footer .contenido-footer .fila-1 .box:nth-child(3) {
+    order: -1;
+    display: flex;
+  }
+
+  footer .contenido-footer .fila-1 .box:first-child {
+    order: 2;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+
+  footer .contenido-footer .box .logo {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  footer .contenido-footer .sociales {
+    justify-content: center;
+    order: -1;
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  footer .contenido-footer .fila-2 {
+    justify-content: center;
+  }
+
+  footer .contenido-footer :is(form, input[type=email]) {
+    width: 100%;
+  }
+
+
+  @keyframes menu-atencion {
+    0% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+
+    50% {
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      -o-transform: scale(0.8);
+    }
+
+    100% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+    }
+  }
+}
+
+
+@media (max-width: 380px) {
+  .cards .card .contenido-card .titulo {
+    font-size: 12px;
+  }
 }

@@ -1,4 +1,7 @@
 # Examen-Practico-Final-FrontEnd1
+## Integrantes
+Ema Celena Gomez Carvajal
+Eduardo Enrique Medrano Piedra
 ## El reto
 
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
